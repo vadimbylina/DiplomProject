@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".AddingMenuActivity">
+
+    <EditText
+        android:id="@+id/LegendEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/compositionLabel"
+        android:textColor="@color/textColor"
+        android:layout_marginTop="82dp" />
+
+    <TextView
+        android:id="@+id/legendLabel"
+        android:textColor="@color/textColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginText"
+        android:layout_marginTop="90dp"
+        android:text="Легенда"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/categoryLabel"
+        android:layout_width="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_height="wrap_content"
+        android:text="Выберите категорию"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/categorySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/categoryLabel"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/nameLabel"
+        android:textColor="@color/textColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/categorySpinner"
+
+        android:layout_marginTop="16dp"
+        android:text="Название:"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/loginText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameLabel"
+        android:textColor="@color/textColor"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/compositionLabel"
+        android:layout_width="wrap_content"
+        android:textColor="@color/textColor"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginText"
+        android:layout_marginTop="16dp"
+        android:text="Состав"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/passwordText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_below="@id/compositionLabel"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/priceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/compositionLabel"
+        android:layout_marginTop="132dp"
+        android:text="Цена, Руб"
+        android:textColor="@color/textColor"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/priceEditText"
+        android:textColor="@color/textColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/priceLabel"
+        android:layout_marginTop="8dp"
+        android:inputType="number|numberDecimal|numberSigned" />
+
+    <Button
+        android:id="@+id/chooseImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/priceEditText"
+        android:backgroundTint="@color/buttonColor"
+        android:textColor="@color/textOnButton"
+        android:layout_marginTop="16dp"
+        android:text="Выбрать изображение" />
+
+    <ImageView
+        android:id="@+id/selectedImage"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/chooseImageButton"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerInside" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="187dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/priceEditText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@color/buttonColor"
+        android:textColor="@color/textOnButton"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="183dp"
+        android:layout_marginEnd="112dp"
+        android:text="Сохранить" />
+</RelativeLayout>

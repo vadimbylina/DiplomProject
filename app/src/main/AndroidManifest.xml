@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission
+        android:name="android.permission.INTERNET"
+        android:maxSdkVersion="32" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ESedu"
+        tools:targetApi="31">
+        <activity
+            android:name=".UserChange"
+            android:exported="false" />
+        <activity
+            android:name=".ProtocolComp"
+            android:exported="false" />
+        <activity
+            android:name=".ProtocolInList"
+            android:exported="false" />
+        <activity
+            android:name=".Protocol"
+            android:exported="false" />
+        <activity
+            android:name=".UserResult"
+            android:exported="false" />
+        <activity
+            android:name=".ColdsExam"
+            android:exported="false" />
+        <activity
+            android:name=".DrinksExam"
+            android:exported="false" />
+        <activity
+            android:name=".DishExam"
+            android:exported="false" />
+        <activity
+            android:name=".FitExam"
+            android:exported="false" />
+        <activity
+            android:name=".ExamMenu"
+            android:exported="false" />
+        <activity
+            android:name=".SoupExam"
+            android:exported="false" />
+        <activity
+            android:name=".ColdsTestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DrinksTestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ResultComp"
+            android:exported="false" />
+        <activity
+            android:name=".ResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ResultInList"
+            android:exported="false" />
+        <activity
+            android:name=".ColdsComp"
+            android:exported="false" />
+        <activity
+            android:name=".ColdsInList"
+            android:exported="false" />
+        <activity
+            android:name=".DrinksComp"
+            android:exported="false" />
+        <activity
+            android:name=".DrinksInList"
+            android:exported="false" />
+        <activity
+            android:name=".DesertComp"
+            android:exported="false" />
+        <activity
+            android:name=".DesertInList"
+            android:exported="false" />
+        <activity
+            android:name=".desertActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChangeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddingMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DishTestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DishInList"
+            android:exported="false" />
+        <activity
+            android:name=".DishAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".DishComp"
+            android:exported="false" />
+        <activity
+            android:name=".DishActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminMenu"
+            android:exported="false" />
+        <activity
+            android:name=".UserComp"
+            android:exported="false" />
+        <activity
+            android:name=".UserInList"
+            android:exported="false" />
+        <activity
+            android:name=".FitTestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".menumenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FitComp"
+            android:exported="false" />
+        <activity
+            android:name=".FitInList"
+            android:exported="false" />
+        <activity
+            android:name=".FitBurgerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Registration"
+            android:exported="false" />
+        <activity
+            android:name=".TestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SoupInList"
+            android:exported="false" />
+        <activity
+            android:name=".SoupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SoupComp"
+            android:exported="false" />
+        <activity
+            android:name=".Сomp"
+            android:exported="false" />
+        <activity
+            android:name=".MainMenu"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

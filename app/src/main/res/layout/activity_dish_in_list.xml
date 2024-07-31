@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/backgroundColor"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DishInList">
+    <ImageView
+        android:id="@+id/dishlistimage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/barspng"/>
+
+    <TextView
+        android:id="@+id/dishlisttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/textColor"
+        android:textSize="30dp"
+        android:paddingHorizontal="20dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/dishlistcomp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp"
+android:textColor="@color/textColor"
+        android:paddingHorizontal="20dp"
+
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/dishlistprice"
+        android:layout_width="match_parent"
+        android:paddingVertical="10dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:paddingHorizontal="20dp"
+        android:layout_gravity="end"
+        android:text="TextView" />
+
+
+
+
+    <Button
+        android:id="@+id/dishlistbutton"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/backgroundColor"
+        android:textColor="@color/textOnButton"
+        android:layout_height="51dp"
+        android:paddingHorizontal="20dp"
+        android:text="Подробнее" />
+</LinearLayout>

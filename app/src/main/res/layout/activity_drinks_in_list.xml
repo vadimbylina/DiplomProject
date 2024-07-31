@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DrinksInList">
+    <ImageView
+        android:id="@+id/drinkslistimage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/barspng"/>
+
+    <TextView
+        android:id="@+id/drinkslisttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:paddingHorizontal="20dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/drinkslistcomp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp"
+android:textColor="@color/textColor"
+        android:paddingHorizontal="20dp"
+
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/drinkslistprice"
+        android:layout_width="match_parent"
+        android:paddingVertical="10dp"
+        android:textColor="@color/textColor"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:layout_gravity="end"
+        android:text="TextView" />
+
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "821233665899",
+    "project_id": "esedu-b42e9",
+    "storage_bucket": "esedu-b42e9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:821233665899:android:7b4d8c4d91a67c54e2ae2e",
+        "android_client_info": {
+          "package_name": "com.example.esedu"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9PE3C3fw7jymKBsr4LlKhck-Mcw7rTMM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

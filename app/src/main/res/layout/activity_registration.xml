@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundColor"
+    tools:context=".Registration">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:fontFamily="sans-serif"
+        android:layout_gravity="center"
+        android:layout_marginTop="170dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:text="Создайте аккаунт!" />
+
+    <EditText
+        android:id="@+id/userLogin"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textColorHint="@color/textColor"
+        android:layout_marginTop="20sp"
+        android:layout_gravity="center"
+        android:textColor="@color/textColor"
+        android:hint="Введите код сотрудника" />
+
+    <EditText
+        android:id="@+id/userPass"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColorHint="@color/textColor"
+        android:layout_marginTop="20sp"
+        android:layout_gravity="center"
+        android:textColor="@color/textColor"
+        android:hint="Введите пароль сотрудника" />
+
+    <Button
+        android:id="@+id/buttonReg"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/buttonColor"
+        android:text="Создать сотрудника"
+        android:textColor="@color/textOnButton"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

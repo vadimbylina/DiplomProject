@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".UserResult">
+
+    <EditText
+        android:id="@+id/startDateText"
+        android:layout_width="250dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:textColor="@color/textColor"
+        android:textColorHint="@color/textColor"
+        android:hint="Введите начальную дату"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/endDateText"
+        android:layout_width="250dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="16dp"
+        android:textColorHint="@color/textColor"
+        android:textColor="@color/textColor"
+        android:ems="10"
+        android:hint="Введите конечную дату"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startDateText" />
+
+    <Button
+        android:id="@+id/userResultButton"
+        android:layout_width="352dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="64dp"
+        android:backgroundTint="@color/buttonColor"
+        android:textColor="@color/textOnButton"
+        android:text="Сфорировать отчёт"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="322dp"
+        android:layout_height="278dp"
+        app:layout_constraintBottom_toTopOf="@+id/userResultButton"
+        android:textColor="@color/textColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/endDateText"
+        app:layout_constraintVertical_bias="0.097" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

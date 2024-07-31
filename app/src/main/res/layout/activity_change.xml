@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".ChangeActivity">
+
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/textColor"
+        android:hint="Поиск..."
+        android:textColor="@color/textColor"
+        android:imeOptions="actionSearch"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/buttonColor"
+        android:textColor="@color/textOnButton"
+        android:layout_below="@id/searchEditText"
+        android:text="Поиск" />
+
+    <EditText
+        android:id="@+id/LegendEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/legendLabel"
+        android:textColor="@color/textColor"
+        android:textSize="8sp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/legendLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordText"
+        android:textColor="@color/textColor"
+        android:layout_marginTop="-3dp"
+        android:text="Легенда"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/nameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchButton"
+        android:textColor="@color/textColor"
+        android:layout_marginTop="11dp"
+        android:text="Название:"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/loginText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameLabel"
+        android:textColor="@color/textColor"
+        android:textSize="8sp"
+
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/compositionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginText"
+        android:textColor="@color/textColor"
+        android:layout_marginTop="16dp"
+        android:text="Состав"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/passwordText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/compositionLabel"
+        android:textColor="@color/textColor"
+        android:textSize="8sp"
+
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/priceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LegendEditText"
+        android:layout_marginTop="5dp"
+        android:text="Цена, руб"
+        android:textColor="@color/textColor"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/priceEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LegendEditText"
+        android:textColor="@color/textColor"
+        android:textSize="8sp"
+
+        android:layout_marginTop="37dp"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/chooseImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/priceEditText"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/buttonColor"
+        android:textColor="@color/textOnButton"
+        android:text="Выбрать изображение" />
+
+    <ImageView
+        android:id="@+id/selectedImage"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/chooseImageButton"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerInside" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="187dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/priceEditText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="4dp"
+        android:textColor="@color/textOnButton"
+        android:backgroundTint="@color/buttonColor"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="114dp"
+        android:text="Сохранить" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/saveButton"
+        android:textColor="@color/textOnButton"
+        android:backgroundTint="@color/buttonColor"
+        android:layout_alignBottom="@+id/saveButton"
+        android:layout_marginEnd="-155dp"
+        android:layout_marginBottom="0dp"
+        android:text="Удалить" />
+</RelativeLayout>

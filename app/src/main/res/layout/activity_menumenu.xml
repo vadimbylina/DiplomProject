@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundColor"
+    tools:context=".menumenuActivity">
+
+    <Button
+        android:id="@+id/soupmenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/buttonColor"
+        android:text="Супы"
+        android:textColor="@color/textOnButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.349" />
+
+    <Button
+        android:id="@+id/desertMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/buttonColor"
+        android:text="Холодные блюда"
+        android:textColor="@color/textOnButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dishesmenu"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="-6dp" />
+
+    <Button
+        android:id="@+id/fitburgersmenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/buttonColor"
+        android:text="Fitбургеры"
+        android:textColor="@color/textOnButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/soupmenu"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="-6dp" />
+
+    <Button
+        android:id="@+id/drinksButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="60dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/buttonColor"
+        android:text="Напитки"
+        android:textColor="@color/textOnButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/desertMenu"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="-6dp" />
+
+    <Button
+        android:id="@+id/dishesmenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/buttonColor"
+        android:text="Вторые блюда"
+        android:textColor="@color/textOnButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fitburgersmenu"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="-6dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/soups"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundColor"
+    tools:context=".Сomp">
+
+    <Button
+        android:id="@+id/soupTestButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/buttonColor"
+        android:text="Супы"
+        android:textColor="@color/textOnButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.322"
+        tools:layout_editor_absoluteX="-6dp" />
+
+    <Button
+        android:id="@+id/dishTestButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/buttonColor"
+        android:text="Вторые блюда"
+        android:textColor="@color/textOnButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fitTestButton"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="-6dp" />
+
+    <Button
+        android:id="@+id/drinksTestButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/buttonColor"
+        android:text="Напитки"
+        android:textColor="@color/textOnButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dishTestButton"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="-6dp" />
+
+    <Button
+        android:id="@+id/coldsTestButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/buttonColor"
+        android:text="Холодные блюда"
+        android:textColor="@color/textOnButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/drinksTestButton"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="-6dp" />
+
+    <Button
+        android:id="@+id/resultUserButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/buttonColor"
+        android:text="Отчёт о пройденных тестах"
+        android:textColor="@color/textOnButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coldsTestButton"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="5dp" />
+
+    <Button
+        android:id="@+id/fitTestButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/buttonColor"
+        android:text="Fitбургеры"
+        android:textColor="@color/textOnButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/soupTestButton"
+        app:layout_constraintVertical_bias="0.007"
+        tools:layout_editor_absoluteX="-6dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
